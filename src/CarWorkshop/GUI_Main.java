@@ -13,7 +13,7 @@ import javax.swing.UIManager;
  *
  * @author SAM
  */
-public class GUI_Main extends javax.swing.JFrame {
+public final class GUI_Main extends javax.swing.JFrame {
 
     /**
      * Creates new form GUI_Main
@@ -40,7 +40,7 @@ public class GUI_Main extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         btn_job_order = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabeljoborder = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         sider1 = new javax.swing.JPanel();
         btn_logout = new javax.swing.JPanel();
@@ -77,6 +77,8 @@ public class GUI_Main extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
+        jPanel35 = new javax.swing.JPanel();
+        jPanel36 = new javax.swing.JPanel();
         jPanel_clients = new javax.swing.JPanel();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel6 = new javax.swing.JPanel();
@@ -109,6 +111,7 @@ public class GUI_Main extends javax.swing.JFrame {
         jPanel32 = new javax.swing.JPanel();
         jPanel33 = new javax.swing.JPanel();
         jPanel34 = new javax.swing.JPanel();
+        jPanel37 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("WorkShop");
@@ -133,12 +136,12 @@ public class GUI_Main extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(240, 240, 240));
-        jLabel1.setText("Job Order ");
-        jLabel1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        jLabeljoborder.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        jLabeljoborder.setForeground(new java.awt.Color(240, 240, 240));
+        jLabeljoborder.setText("Job Order ");
+        jLabeljoborder.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                jLabel1MouseMoved(evt);
+                jLabeljoborderMouseMoved(evt);
             }
         });
 
@@ -163,7 +166,7 @@ public class GUI_Main extends javax.swing.JFrame {
                 .addGap(22, 22, 22)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1)
+                .addComponent(jLabeljoborder)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(sider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -173,7 +176,7 @@ public class GUI_Main extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(btn_job_orderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2)
-                    .addComponent(jLabel1))
+                    .addComponent(jLabeljoborder))
                 .addContainerGap())
             .addComponent(sider1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -595,7 +598,33 @@ public class GUI_Main extends javax.swing.JFrame {
             .addGap(0, 353, Short.MAX_VALUE)
         );
 
-        jTabbedPane1.addTab("tab3", jPanel13);
+        jTabbedPane1.addTab("Add car", jPanel13);
+
+        javax.swing.GroupLayout jPanel35Layout = new javax.swing.GroupLayout(jPanel35);
+        jPanel35.setLayout(jPanel35Layout);
+        jPanel35Layout.setHorizontalGroup(
+            jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 707, Short.MAX_VALUE)
+        );
+        jPanel35Layout.setVerticalGroup(
+            jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 353, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Edit car", jPanel35);
+
+        javax.swing.GroupLayout jPanel36Layout = new javax.swing.GroupLayout(jPanel36);
+        jPanel36.setLayout(jPanel36Layout);
+        jPanel36Layout.setHorizontalGroup(
+            jPanel36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 707, Short.MAX_VALUE)
+        );
+        jPanel36Layout.setVerticalGroup(
+            jPanel36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 353, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Remove car", jPanel36);
 
         javax.swing.GroupLayout jPanel_carsLayout = new javax.swing.GroupLayout(jPanel_cars);
         jPanel_cars.setLayout(jPanel_carsLayout);
@@ -986,7 +1015,20 @@ public class GUI_Main extends javax.swing.JFrame {
             .addGap(0, 353, Short.MAX_VALUE)
         );
 
-        jTabbedPane12.addTab("Edit", jPanel34);
+        jTabbedPane12.addTab("Printer", jPanel34);
+
+        javax.swing.GroupLayout jPanel37Layout = new javax.swing.GroupLayout(jPanel37);
+        jPanel37.setLayout(jPanel37Layout);
+        jPanel37Layout.setHorizontalGroup(
+            jPanel37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 707, Short.MAX_VALUE)
+        );
+        jPanel37Layout.setVerticalGroup(
+            jPanel37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 353, Short.MAX_VALUE)
+        );
+
+        jTabbedPane12.addTab("Activate", jPanel37);
 
         javax.swing.GroupLayout jPanel_settingsLayout = new javax.swing.GroupLayout(jPanel_settings);
         jPanel_settings.setLayout(jPanel_settingsLayout);
@@ -1072,15 +1114,15 @@ public class GUI_Main extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel1MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseMoved
+    private void jLabeljoborderMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabeljoborderMouseMoved
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jLabel1MouseMoved
+    }//GEN-LAST:event_jLabeljoborderMouseMoved
 
     private void btn_job_orderMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_job_orderMouseEntered
         // TODO add your handling code here:
         btn_job_order.setBackground(new Color(244, 184, 0));
-        jLabel1.setBackground(new Color(244, 184, 0));
+        jLabeljoborder.setBackground(new Color(244, 184, 0));
         jLabel2.setBackground(new Color(244, 184, 0));
     }//GEN-LAST:event_btn_job_orderMouseEntered
 
@@ -1092,7 +1134,7 @@ public class GUI_Main extends javax.swing.JFrame {
     private void btn_job_orderMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_job_orderMouseExited
         // TODO add your handling code here:
         btn_job_order.setBackground(new Color(78, 78, 120));
-        jLabel1.setBackground(new Color(78, 78, 120));
+        jLabeljoborder.setBackground(new Color(78, 78, 120));
         jLabel2.setBackground(new Color(78, 78, 120));
     }//GEN-LAST:event_btn_job_orderMouseExited
 
@@ -1275,7 +1317,6 @@ public class GUI_Main extends javax.swing.JFrame {
     private javax.swing.JPanel btn_job_order;
     private javax.swing.JPanel btn_logout;
     private javax.swing.JPanel btn_settings;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -1290,6 +1331,7 @@ public class GUI_Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel_client_img;
+    private javax.swing.JLabel jLabeljoborder;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
@@ -1319,6 +1361,9 @@ public class GUI_Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel32;
     private javax.swing.JPanel jPanel33;
     private javax.swing.JPanel jPanel34;
+    private javax.swing.JPanel jPanel35;
+    private javax.swing.JPanel jPanel36;
+    private javax.swing.JPanel jPanel37;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
