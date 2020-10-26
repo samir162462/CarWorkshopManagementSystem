@@ -16,7 +16,7 @@ public class CarWorkshop {
      */
     public static void main(String[] args) {
         // intro
-        SplashScreen splash = new SplashScreen(5000);
+        SplashScreen splash = new SplashScreen(2000);
         splash.showSplash();
         //login
         
