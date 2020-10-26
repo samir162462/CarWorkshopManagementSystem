@@ -49,7 +49,7 @@ public class SplashScreen extends JWindow {
         Image splashScreen = Toolkit.getDefaultToolkit().getImage("src\\CarWorkshop\\img\\logo_app.png");
         JLabel label = new JLabel(new ImageIcon(splashScreen));
         JLabel copyrt = new JLabel
-                ("Copyright 2020, The Job Coders", JLabel.CENTER);
+                ("Copyright 2020 © The Job Coders", JLabel.CENTER);
         copyrt.setFont(new Font("Sans-Serif", Font.BOLD, 12));
         content.add(label, BorderLayout.CENTER);
         content.add(copyrt, BorderLayout.SOUTH);

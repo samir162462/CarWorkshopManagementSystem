@@ -82,16 +82,23 @@ public class GUI_Main extends javax.swing.JFrame {
         jPanel10 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel27 = new javax.swing.JPanel();
+        jPanel30 = new javax.swing.JPanel();
+        jPanel31 = new javax.swing.JPanel();
         jPanel_reports = new javax.swing.JPanel();
         jTabbedPane5 = new javax.swing.JTabbedPane();
         jPanel16 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
         jPanel_job_order = new javax.swing.JPanel();
         jTabbedPane11 = new javax.swing.JTabbedPane();
         jPanel24 = new javax.swing.JPanel();
         jPanel25 = new javax.swing.JPanel();
         jPanel26 = new javax.swing.JPanel();
+        jPanel28 = new javax.swing.JPanel();
+        jPanel29 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("WorkShop");
@@ -616,7 +623,7 @@ public class GUI_Main extends javax.swing.JFrame {
             .addGap(0, 353, Short.MAX_VALUE)
         );
 
-        jTabbedPane3.addTab("Current clients", jPanel10);
+        jTabbedPane3.addTab("Current items", jPanel10);
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -629,7 +636,7 @@ public class GUI_Main extends javax.swing.JFrame {
             .addGap(0, 353, Short.MAX_VALUE)
         );
 
-        jTabbedPane3.addTab("Clients", jPanel11);
+        jTabbedPane3.addTab("Back iteams", jPanel11);
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
@@ -642,7 +649,59 @@ public class GUI_Main extends javax.swing.JFrame {
             .addGap(0, 353, Short.MAX_VALUE)
         );
 
-        jTabbedPane3.addTab("Top clients ", jPanel15);
+        jTabbedPane3.addTab("Needed iteams", jPanel15);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 707, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 353, Short.MAX_VALUE)
+        );
+
+        jTabbedPane3.addTab("shortage iteams", jPanel3);
+
+        javax.swing.GroupLayout jPanel27Layout = new javax.swing.GroupLayout(jPanel27);
+        jPanel27.setLayout(jPanel27Layout);
+        jPanel27Layout.setHorizontalGroup(
+            jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 707, Short.MAX_VALUE)
+        );
+        jPanel27Layout.setVerticalGroup(
+            jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 353, Short.MAX_VALUE)
+        );
+
+        jTabbedPane3.addTab("Add iteams", jPanel27);
+
+        javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
+        jPanel30.setLayout(jPanel30Layout);
+        jPanel30Layout.setHorizontalGroup(
+            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 707, Short.MAX_VALUE)
+        );
+        jPanel30Layout.setVerticalGroup(
+            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 353, Short.MAX_VALUE)
+        );
+
+        jTabbedPane3.addTab("Delete iteams", jPanel30);
+
+        javax.swing.GroupLayout jPanel31Layout = new javax.swing.GroupLayout(jPanel31);
+        jPanel31.setLayout(jPanel31Layout);
+        jPanel31Layout.setHorizontalGroup(
+            jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 707, Short.MAX_VALUE)
+        );
+        jPanel31Layout.setVerticalGroup(
+            jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 353, Short.MAX_VALUE)
+        );
+
+        jTabbedPane3.addTab("Edit iteams", jPanel31);
 
         javax.swing.GroupLayout jPanel_inventoryLayout = new javax.swing.GroupLayout(jPanel_inventory);
         jPanel_inventory.setLayout(jPanel_inventoryLayout);
@@ -676,7 +735,7 @@ public class GUI_Main extends javax.swing.JFrame {
             .addGap(0, 353, Short.MAX_VALUE)
         );
 
-        jTabbedPane5.addTab("Current Cars", jPanel16);
+        jTabbedPane5.addTab("Day", jPanel16);
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
@@ -689,7 +748,7 @@ public class GUI_Main extends javax.swing.JFrame {
             .addGap(0, 353, Short.MAX_VALUE)
         );
 
-        jTabbedPane5.addTab("Car History", jPanel17);
+        jTabbedPane5.addTab("Month", jPanel17);
 
         javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
         jPanel18.setLayout(jPanel18Layout);
@@ -702,7 +761,20 @@ public class GUI_Main extends javax.swing.JFrame {
             .addGap(0, 353, Short.MAX_VALUE)
         );
 
-        jTabbedPane5.addTab("tab3", jPanel18);
+        jTabbedPane5.addTab("Year", jPanel18);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 707, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 353, Short.MAX_VALUE)
+        );
+
+        jTabbedPane5.addTab("Shift", jPanel2);
 
         javax.swing.GroupLayout jPanel_reportsLayout = new javax.swing.GroupLayout(jPanel_reports);
         jPanel_reports.setLayout(jPanel_reportsLayout);
@@ -736,7 +808,7 @@ public class GUI_Main extends javax.swing.JFrame {
             .addGap(0, 353, Short.MAX_VALUE)
         );
 
-        jTabbedPane11.addTab("Current Cars", jPanel24);
+        jTabbedPane11.addTab("Make order", jPanel24);
 
         javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
         jPanel25.setLayout(jPanel25Layout);
@@ -749,7 +821,7 @@ public class GUI_Main extends javax.swing.JFrame {
             .addGap(0, 353, Short.MAX_VALUE)
         );
 
-        jTabbedPane11.addTab("Car History", jPanel25);
+        jTabbedPane11.addTab("New order ", jPanel25);
 
         javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
         jPanel26.setLayout(jPanel26Layout);
@@ -762,7 +834,33 @@ public class GUI_Main extends javax.swing.JFrame {
             .addGap(0, 353, Short.MAX_VALUE)
         );
 
-        jTabbedPane11.addTab("tab3", jPanel26);
+        jTabbedPane11.addTab("Shift orders ", jPanel26);
+
+        javax.swing.GroupLayout jPanel28Layout = new javax.swing.GroupLayout(jPanel28);
+        jPanel28.setLayout(jPanel28Layout);
+        jPanel28Layout.setHorizontalGroup(
+            jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 707, Short.MAX_VALUE)
+        );
+        jPanel28Layout.setVerticalGroup(
+            jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 353, Short.MAX_VALUE)
+        );
+
+        jTabbedPane11.addTab("Load order ", jPanel28);
+
+        javax.swing.GroupLayout jPanel29Layout = new javax.swing.GroupLayout(jPanel29);
+        jPanel29.setLayout(jPanel29Layout);
+        jPanel29Layout.setHorizontalGroup(
+            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 707, Short.MAX_VALUE)
+        );
+        jPanel29Layout.setVerticalGroup(
+            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 353, Short.MAX_VALUE)
+        );
+
+        jTabbedPane11.addTab("Bounced back", jPanel29);
 
         javax.swing.GroupLayout jPanel_job_orderLayout = new javax.swing.GroupLayout(jPanel_job_order);
         jPanel_job_order.setLayout(jPanel_job_orderLayout);
@@ -1044,6 +1142,7 @@ public class GUI_Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel19;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel22;
@@ -1051,6 +1150,12 @@ public class GUI_Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel24;
     private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel26;
+    private javax.swing.JPanel jPanel27;
+    private javax.swing.JPanel jPanel28;
+    private javax.swing.JPanel jPanel29;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel30;
+    private javax.swing.JPanel jPanel31;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
