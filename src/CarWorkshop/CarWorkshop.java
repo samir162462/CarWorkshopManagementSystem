@@ -15,7 +15,14 @@ public class CarWorkshop {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // intro
+        SplashScreen splash = new SplashScreen(5000);
+        splash.showSplash();
+        //login
+        
+    
+        
+        //app
         GUI_Main g = new GUI_Main();
         g.setVisible(true);
     }
