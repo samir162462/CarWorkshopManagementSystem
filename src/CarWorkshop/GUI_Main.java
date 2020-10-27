@@ -202,6 +202,9 @@ public final class GUI_Main extends javax.swing.JFrame {
 
         btn_logout.setBackground(new java.awt.Color(112, 112, 162));
         btn_logout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_logoutMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btn_logoutMouseEntered(evt);
             }
@@ -649,7 +652,7 @@ public final class GUI_Main extends javax.swing.JFrame {
         jPanel_cars.setLayout(jPanel_carsLayout);
         jPanel_carsLayout.setHorizontalGroup(
             jPanel_carsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 789, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1)
         );
         jPanel_carsLayout.setVerticalGroup(
             jPanel_carsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1388,6 +1391,12 @@ public final class GUI_Main extends javax.swing.JFrame {
         jPanel1.repaint();
     }//GEN-LAST:event_jPanel24KeyReleased
 
+    private void btn_logoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_logoutMouseClicked
+        // TODO add your handling code here:
+        Panel_logout pl = new Panel_logout();
+        
+    }//GEN-LAST:event_btn_logoutMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1462,9 +1471,6 @@ public final class GUI_Main extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JTabbedPane jTabbedPane5;
-    private javax.swing.JPanel jdynamic_catagory1;
-    private javax.swing.JPanel jdynamic_catagory5;
-    private javax.swing.JPanel jdynamic_catagory6;
     private javax.swing.JLabel jlabel_client_name;
     private javax.swing.JPanel sider1;
     private javax.swing.JPanel sider2;
