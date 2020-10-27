@@ -18,19 +18,17 @@ public class Panel_logout extends WindowAdapter {
 
     JFrame f;
 
-    Panel_logout() {
-        f = new JFrame();
+    Panel_logout(JFrame f) {
+        this.f = f;
         f.addWindowListener(this);
-        f.setSize(300, 300);
-        f.setLayout(null);
-        f.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         f.setVisible(true);
     }
 
     public void windowClosing(WindowEvent e) {
         int a = JOptionPane.showConfirmDialog(f, "Are you sure you want to logout?");
         if (a == JOptionPane.YES_OPTION) {
-            f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            GUI_login g = new GUI_login();
+            g.setVisible(true);
         }
     }
 }

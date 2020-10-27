@@ -1393,7 +1393,8 @@ public final class GUI_Main extends javax.swing.JFrame {
 
     private void btn_logoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_logoutMouseClicked
         // TODO add your handling code here:
-        Panel_logout pl = new Panel_logout();
+        Panel_logout p = new Panel_logout(this);
+
         
     }//GEN-LAST:event_btn_logoutMouseClicked
 
