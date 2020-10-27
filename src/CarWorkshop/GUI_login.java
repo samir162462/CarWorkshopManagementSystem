@@ -5,6 +5,9 @@
  */
 package CarWorkshop;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 /**
  *
  * @author SAM
@@ -16,6 +19,8 @@ public class GUI_login extends javax.swing.JFrame {
      */
     public GUI_login() {
         initComponents();
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        this.setLocation(dim.width / 2 - this.getSize().width / 2, dim.height / 2 - this.getSize().height / 2);
     }
 
     /**
@@ -152,11 +157,11 @@ public class GUI_login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        if ("admin".equals(user_in.getText()) ) {
+        if ("admin".equals(user_in.getText())) {
             //app
             GUI_Main g = new GUI_Main();
             g.setVisible(true);
-            
+
             this.dispose();
         }
     }//GEN-LAST:event_jButton1ActionPerformed
