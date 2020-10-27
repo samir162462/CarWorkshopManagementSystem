@@ -23,9 +23,7 @@ public class CarWorkshop {
         g_log.setVisible(true);
     
         
-        //app
-        GUI_Main g = new GUI_Main();
-        g.setVisible(true);
+
     }
     
 }
