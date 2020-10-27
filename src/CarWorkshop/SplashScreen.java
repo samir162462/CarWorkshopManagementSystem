@@ -45,9 +45,11 @@ public class SplashScreen extends JWindow {
         int y = (screen.height-height)/2;
         setBounds(x,y,width,height);
          
-        // Build the splash screen
+        // Build the splash screen "/CarWorkshop/img/icons8_task_25px.png"
         Image splashScreen = Toolkit.getDefaultToolkit().getImage("src\\CarWorkshop\\img\\logo_app.png");
+        
         JLabel label = new JLabel(new ImageIcon(splashScreen));
+        label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CarWorkshop/img/logo_app.png")));
         JLabel copyrt = new JLabel
                 ("Copyright 2020 © The Job Coders", JLabel.CENTER);
         copyrt.setFont(new Font("Sans-Serif", Font.BOLD, 12));
