@@ -12,6 +12,7 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.awt.Panel;
+import java.awt.Toolkit;
 import java.util.ArrayList;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -33,6 +34,8 @@ public final class GUI_Main extends javax.swing.JFrame {
      */
     public GUI_Main() {
         initComponents();
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        this.setLocation(dim.width / 2 - this.getSize().width / 2, dim.height / 2 - this.getSize().height / 2);
         reset_siders();
         jPanel_cars.setVisible(false);
         jPanel_clients.setVisible(false);
@@ -1187,13 +1190,13 @@ public final class GUI_Main extends javax.swing.JFrame {
         for (int i = 0; i < panellist.size(); i++) {
             c.gridx = i;
             c.gridy = 5;
-            c.weighty = 0.5;   
+            c.weighty = 0.5;
             c.weightx = 0.5;
             catagory_panel get = panellist.get(i);
             JLabel l = new JLabel();
             l.setText("2");
             get.setjLabel1(l);
-            jPanel1.add(get,c);
+            jPanel1.add(get, c);
             get.setVisible(true);
         }
         jPanel1.repaint();
