@@ -157,7 +157,9 @@ public class GUI_login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        if ("admin".equals(user_in.getText())) {
+        String passText = new String(pass_in.getPassword());
+
+        if ("admin".equals(user_in.getText())&&"admin".equals(passText)) {
             //app
             GUI_Main g = new GUI_Main();
             g.setVisible(true);
