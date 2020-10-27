@@ -19,7 +19,8 @@ public class CarWorkshop {
         SplashScreen splash = new SplashScreen(2000);
         splash.showSplash();
         //login
-        
+        GUI_login g_log = new GUI_login();
+        g_log.setVisible(true);
     
         
         //app

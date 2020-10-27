@@ -85,7 +85,9 @@ public class GUI_login extends javax.swing.JFrame {
         jPasswordField1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jPasswordField1.setText("jPasswordField1");
 
-        jButton1.setText("jButton1");
+        jButton1.setBackground(new java.awt.Color(62, 62, 95));
+        jButton1.setForeground(new java.awt.Color(240, 240, 240));
+        jButton1.setText("Login");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
