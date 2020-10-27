@@ -44,6 +44,8 @@ public final class GUI_Main extends javax.swing.JFrame {
         jPanel_job_order.setVisible(false); 
         jPanel_settings.setVisible(false);
 jPanel19.setVisible(false);
+
+
 jPanel14.setVisible(false);
     }
 
